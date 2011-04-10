@@ -1,0 +1,9 @@
+#!/usr/bin/env jruby
+
+require 'rack'
+
+require 'trinidad_rack'
+
+server = Rack::Server.new
+server.options[:server] = 'trinidad'
+server.start

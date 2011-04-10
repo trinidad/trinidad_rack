@@ -1,0 +1,30 @@
+Trinidad-Rack
+-------------
+
+Library that replaces Trinidad's rack layer from JRuby-Rack to the Mizuno Rack Servlet.
+
+It provides better integration with tools that relie on Rack like Capybara
+or any other Rack-Test based tool.
+
+RackServlet is a work of Don Werve and it's licensed under the Apache
+License. This library modifies its code to remove the asynchronous layer
+bounded to Jetty.
+
+Installation
+============
+
+$ jruby -S gem install trinidad_rack
+
+Execution
+=========
+
+$ jruby -S trinidad_rack
+
+or
+
+$ rackup -s Trinidad
+
+[IMPORTANT]
+
+This is totally experimental and due to Mizuno and JRuby-Rack
+work in a completely different way some features cannot work as expected.
